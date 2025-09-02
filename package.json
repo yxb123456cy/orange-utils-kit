@@ -4,9 +4,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview",
+    "dev": "NODE_ENV=development tsup --watch",
+    "build": "NODE_ENV=build tsup",
+    "build:dev": "NODE_ENV=development tsup",
     "commit": "git-cz",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
@@ -25,6 +25,7 @@
     "@types/node": "^24.3.0",
     "meta-env-typed": "^2.0.3",
     "pinia": "^3.0.3",
+    "tsup": "^8.5.0",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },
