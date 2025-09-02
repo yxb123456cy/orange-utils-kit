@@ -1,4 +1,4 @@
-import useRandomInteger from 'packages/Browser/Number/useRandomInteger/useRandomInteger'
+import { useRandomInteger } from 'packages/Browser'
 import { describe, expect, it } from 'vitest'
 
 describe('useRandomInteger', () => {

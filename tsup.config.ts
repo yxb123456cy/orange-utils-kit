@@ -2,12 +2,11 @@ import type { Options } from 'tsup'
 import process from 'node:process'
 import { defineConfig } from 'tsup'
 
-const currentNodeEnv = process.env.NODE_ENV
-const isProd = currentNodeEnv === 'build'
-
+// 直接在配置文件中处理环境逻辑
+const isProduction = process.env.NODE_ENV === 'production'
 const commonConfig: Options = {
-  minify: isProd,
-  sourcemap: !isProd,
+  minify: isProduction,
+  sourcemap: !isProduction,
   shims: true,
   clean: true,
   dts: true,
