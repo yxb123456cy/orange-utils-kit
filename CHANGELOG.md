@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/yxb123456cy/orange-utils-kit/compare/v0.0.6...v0.0.7) (2025-09-03)
+
+
+### ✨ Features | 新功能
+
+* **Browser-security:** :sparkles: 新增Brower-security模块 useMD5 Function ([d15bc63](https://github.com/yxb123456cy/orange-utils-kit/commit/d15bc630a07ac69885c5364caa3a337dc1b1f296))
+* **Browser-security:** :sparkles: 新增useHmacSha256与useSha256 ([3f3c2df](https://github.com/yxb123456cy/orange-utils-kit/commit/3f3c2dfd8c62b276fc2d32c82dd80820a639e259))
+* **node-docker-cli:** :sparkles: 新增useDockerListContainers ([1c1f91f](https://github.com/yxb123456cy/orange-utils-kit/commit/1c1f91f1a4353d4e0b122d3fcb1faaaaa976bc01))
+* **Node-system-info:** :sparkles: 添加useOsInfo ([9ce1243](https://github.com/yxb123456cy/orange-utils-kit/commit/9ce1243152b615872c96bea7c79fc100e61a749f))
+
 ### 0.0.2 (2025-09-03)
 
 
