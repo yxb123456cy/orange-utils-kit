@@ -1,7 +1,7 @@
 {
   "name": "@qy-utils/orange-utils-kit",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A useXXX-style utility function library for modern frontend development, featuring robust TypeScript type support. It includes two categories of utilities: Node.js server-side helpers and Browser-based functions.",
   "author": "yxb123456cy <2186256471@qq.com>",
   "license": "MIT",
