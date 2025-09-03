@@ -6,5 +6,6 @@ import CryptoJS from 'crypto-js'
  * @returns 进行MD加密后的值;
  */
 export function useMD5(value: string) {
+
   return CryptoJS.MD5(value).toString()
 }
