@@ -1,8 +1,48 @@
 {
-  "name": "orange-utils-kit",
+  "name": "@qy-utils/orange-utils-kit",
   "type": "module",
   "version": "0.0.1",
-  "private": true,
+  "description": "A useXXX-style utility function library for modern frontend development, featuring robust TypeScript type support. It includes two categories of utilities: Node.js server-side helpers and Browser-based functions.",
+  "author": "yxb123456cy <2186256471@qq.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/yxb123456cy/orange-utils-kit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yxb123456cy/orange-utils-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yxb123456cy/orange-utils-kit/issues"
+  },
+  "keywords": [
+    "utils",
+    "typescript",
+    "useXXX",
+    "browser",
+    "nodejs",
+    "utility-library"
+  ],
+  "sideEffects": false,
+  "exports": {
+    "./browser": {
+      "types": "./dist/browser/index.d.ts",
+      "import": "./dist/browser/index.js",
+      "node": "./dist/browser/index.cjs",
+      "default": "./dist/browser/index.d.ts"
+    },
+    "./node": {
+      "types": "./dist/node/index.d.ts",
+      "import": "./dist/node/index.js",
+      "node": "./dist/node/index.cjs",
+      "default": "./dist/node/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
@@ -12,7 +52,8 @@
     "lint:fix": "eslint --fix",
     "prepare": "husky",
     "test": "vitest",
-    "release": "standard-version"
+    "release": "standard-version",
+    "publish:all": "npm version patch && git push --follow-tags"
   },
   "config": {
     "commitizen": {
@@ -20,36 +61,22 @@
       "useEmoji": true
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
-    "@icon-park/vue-next": "^1.4.2",
     "@types/node": "^24.3.0",
-    "meta-env-typed": "^2.0.3",
-    "pinia": "^3.0.3",
-    "tsup": "^8.5.0",
-    "vue": "^3.5.18",
-    "vue-router": "^4.5.1"
+    "tsup": "^8.5.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.2.1",
-    "@arco-design/web-vue": "^2.57.0",
-    "@vitejs/plugin-vue": "^6.0.1",
-    "@vue/tsconfig": "^0.7.0",
     "cross-env": "^10.0.0",
     "cz-git": "^1.12.0",
     "eslint": "^9.34.0",
     "husky": "^9.1.7",
-    "rollup-plugin-visualizer": "^6.0.3",
     "standard-version": "^9.5.0",
     "typescript": "~5.8.3",
-    "unplugin-auto-import": "^20.1.0",
-    "unplugin-vue-components": "^29.0.0",
-    "vite": "^7.1.2",
-    "vite-plugin-compression": "^0.5.1",
-    "vite-plugin-image-optimizer": "^2.0.2",
-    "vite-plugin-md": "^0.21.5",
-    "vite-plugin-remove-console": "^2.2.0",
-    "vite-svg-loader": "^5.1.0",
-    "vitest": "^3.2.4",
-    "vue-tsc": "^3.0.5"
+    "vitest": "^3.2.4"
+
   }
 }
